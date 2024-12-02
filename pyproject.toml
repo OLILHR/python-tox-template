@@ -2,7 +2,7 @@
 name = "python-tox-template"
 description = "codebase consolidation tool"
 license = { file = "LICENSE" }
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 authors = [{ name = "OLILHR" }]
 keywords = []
 classifiers = [
@@ -14,6 +14,7 @@ classifiers = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 dynamic = ["readme", "version"]
@@ -70,7 +71,7 @@ path = "README.md"
 
 [tool.black]
 line-length = 120
-target_version = ["py313"]
+target_version = ["py312", "py313"]
 
 [tool.isort]
 line_length = 120
