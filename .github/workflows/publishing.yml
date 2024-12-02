@@ -1,4 +1,4 @@
-name: "Publishing to PyPI."
+name: "Publishing to PyPI"
 
 on:
   release:
