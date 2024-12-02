@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?labelColor=30363D&color=fccccc)](LICENSE)
 ![Python Versions (officially) supported](https://img.shields.io/pypi/pyversions/ahlbatross.svg?labelColor=30363D&color=fccccc)
-![Unittests status badge](https://github.com/OLILHR/python-tox-template/workflows/Unittesting/badge.svg)
+![Unittests status badge](https://github.com/OLILHR/python-tox-template/workflows/Unittests/badge.svg)
 ![Coverage status badge](https://github.com/OLILHR/python-tox-template/workflows/Coverage/badge.svg)
 ![Pylint status badge](https://github.com/OLILHR/python-tox-template/workflows/Linting/badge.svg)
 ![Formatting status badge](https://github.com/OLILHR/python-tox-template/workflows/Formatting/badge.svg)

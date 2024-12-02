@@ -1,4 +1,4 @@
-name: "Prevent byte order marks."
+name: "Prevent byte order marks"
 
 on:
   push:
