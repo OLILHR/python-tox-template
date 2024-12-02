@@ -1,0 +1,92 @@
+[project]
+name = "python-tox-template"
+description = "codebase consolidation tool"
+license = { file = "LICENSE" }
+requires-python = ">=3.13"
+authors = [{ name = "OLILHR" }]
+keywords = []
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dynamic = ["readme", "version"]
+dependencies = []
+
+[project.optional-dependencies]
+coverage = [
+    "coverage==7.6.8"
+]
+dev = [
+    "pip-tools"
+]
+linting = [
+    "pylint==3.3.2"
+]
+
+formatting = [
+    "black==24.10.0",
+    "isort==5.13.2"
+]
+packaging = [
+    "pdm==2.21.0",
+    "twine==6.0.1"
+]
+spellchecking = [
+    "codespell==2.3.0"
+]
+testing = [
+    "pytest==8.3.4"
+]
+typechecking = [
+    "mypy==1.13.0"
+]
+[project.scripts]
+
+[project.urls]
+Changelog = "https://github.com/OLILHR/python-tox-template/releases"
+Homepage = "https://github.com/OLILHR/python-tox-template"
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm.version]
+source = "scm"
+
+[tool.pdm.build]
+includes = ["src"]
+excludes = ["/unittests"]
+
+[tool.pdm.readme]
+content-type = "text/markdown"
+path = "README.md"
+
+[tool.black]
+line-length = 120
+target_version = ["py313"]
+
+[tool.isort]
+line_length = 120
+profile = "black"
+
+[mypy]
+truethy-bool = true
+
+[tool.mypy]
+disable_error_code = ["no-untyped-def", "no-untyped-call"]
+
+[tool.pylint.format]
+max-line-length = 120
+
+[tool.pylint."MESSAGES CONTROL"]
+disable = [
+    "too-few-public-methods",
+    "fixme",
+    ]
