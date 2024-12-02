@@ -1,0 +1,17 @@
+.env*
+!*.example
+
+.coverage
+.idea/
+.pdm-build/
+.pytest_cache/
+.tox/
+.venv
+
+__pycache__/
+dist/
+htmlcov/
+
+# OS
+.DS_Store
+Thumbs.db
