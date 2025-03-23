@@ -23,4 +23,4 @@ jobs:
           pip install tox
       - name: Run Packaging Test
         run: |
-          tox -e test_packaging
+          tox -e packaging
