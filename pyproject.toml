@@ -31,7 +31,7 @@ linting = [
     "pylint==3.3.2"
 ]
 formatting = [
-    "black==24.10.0",
+    "black==25.1.0",
     "isort==6.0.1"
 ]
 packaging = [
