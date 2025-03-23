@@ -22,7 +22,7 @@ dynamic = ["readme", "version"]
 
 [project.optional-dependencies]
 coverage = [
-    "coverage==7.6.8"
+    "coverage==7.7.1"
 ]
 dev = [
     "pip-tools"
