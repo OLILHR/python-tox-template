@@ -28,7 +28,7 @@ dev = [
     "pip-tools"
 ]
 linting = [
-    "pylint==3.3.2"
+    "pylint==3.3.6"
 ]
 formatting = [
     "black==25.1.0",
